@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Payment Bomz 💥👻</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://files.catbox.moe/nufi4l.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #ffcc00;
+    }
+    .payment {
+      background: rgba(255,255,255,0.08);
+      padding: 15px;
+      border-radius: 12px;
+      margin: 15px 0;
+      text-align: left;
+    }
+    .payment h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #ffcc00;
+    }
+    .payment p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-dana {
+      background: #1bb6e0;
+      color: white;
+    }
+    .btn-gopay {
+      background: #00AA13;
+      color: white;
+    }
+    button:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💥👻 All Payment Bomz 💥👻</h1>
+
+    <div class="payment">
+      <h2>DANA</h2>
+      <p>Nomor: <b>083819237425</b></p>
+      <p>Nama: <b>to tzy</b></p>
+      <button class="btn-dana" onclick="copyToClipboard('083819237425')">Salin Nomor DANA</button>
+    </div>
+
+    <div class="payment">
+      <h2>Gopay</h2>
+      <p>Nomor: <b>082188289728</b></p>
+      <p>Nama: <b>bocil.beban</b></p>
+      <button class="btn-gopay" onclick="copyToClipboard('082188289728')">Salin Nomor Gopay</button>
+    </div>
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Nomor " + text + " berhasil disalin ✅");
+      });
+    }
+  </script>
+</body>
+</html>
